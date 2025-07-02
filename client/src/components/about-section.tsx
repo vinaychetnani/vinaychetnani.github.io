@@ -38,7 +38,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 warm-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="section-fade">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">About Me</h2>
+          <h2 className="decorative-text text-4xl md:text-5xl font-bold text-center mb-16 text-primary">About Me 👨‍💻</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
@@ -92,7 +92,7 @@ export default function AboutSection() {
           
           {/* Technical Skills */}
           <div>
-            <h3 className="text-2xl font-semibold text-center mb-8 text-primary">Technical Expertise</h3>
+            <h3 className="decorative-text text-2xl font-semibold text-center mb-8 text-primary">🛠️ Technical Expertise</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {skills.map((skill, index) => {
                 const colors = [
