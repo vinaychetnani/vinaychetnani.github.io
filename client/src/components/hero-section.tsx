@@ -1,5 +1,6 @@
 import { Download, Linkedin, Github, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "@assets/generation-1bb3bbb7-e4db-406b-abcc-733346d08097_1751497638165.png";
 
 export default function HeroSection() {
   const scrollToProjects = () => {
@@ -30,9 +31,9 @@ export default function HeroSection() {
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <div className="mb-8">
           <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" 
+            src={profileImage} 
             alt="Vinay Chetnani professional headshot" 
-            className="w-48 h-48 rounded-full mx-auto shadow-2xl border-4 border-white/20"
+            className="w-48 h-48 rounded-full mx-auto shadow-2xl border-4 border-white/20 object-cover"
           />
         </div>
         
