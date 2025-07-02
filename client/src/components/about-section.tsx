@@ -35,7 +35,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 warm-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="section-fade">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">About Me</h2>
@@ -95,12 +95,18 @@ export default function AboutSection() {
             <h3 className="text-2xl font-semibold text-center mb-8 text-primary">Technical Expertise</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {skills.map((skill, index) => {
-                const colors = ['bg-primary', 'bg-secondary', 'bg-accent'];
+                const colors = [
+                  'bg-primary/80', 
+                  'bg-secondary/80', 
+                  'bg-accent/80',
+                  'bg-gradient-to-r from-secondary/70 to-primary/70',
+                  'bg-gradient-to-r from-accent/70 to-secondary/70'
+                ];
                 const colorClass = colors[index % colors.length];
                 return (
                   <span 
                     key={skill}
-                    className={`skill-tag ${colorClass} text-white px-4 py-2 rounded-full text-sm font-medium cursor-default`}
+                    className={`skill-tag ${colorClass} text-white px-4 py-2 rounded-full text-sm font-medium cursor-default soft-shadow`}
                   >
                     {skill}
                   </span>

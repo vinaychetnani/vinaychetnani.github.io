@@ -22,10 +22,20 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="min-h-screen gradient-bg flex items-center justify-center text-white relative overflow-hidden">
-      {/* Abstract background pattern */}
-      <div className="absolute inset-0 opacity-10">
+      {/* Dreamy background pattern */}
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute top-3/4 left-1/3 w-48 h-48 bg-accent/30 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/3 right-1/3 w-72 h-72 bg-secondary/20 rounded-full blur-3xl"></div>
+      </div>
+      
+      {/* Floating elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-3 h-3 bg-accent/40 rounded-full animate-bounce" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
+        <div className="absolute top-32 right-20 w-2 h-2 bg-secondary/50 rounded-full animate-bounce" style={{animationDelay: '1s', animationDuration: '4s'}}></div>
+        <div className="absolute bottom-40 left-20 w-4 h-4 bg-white/60 rounded-full animate-bounce" style={{animationDelay: '2s', animationDuration: '5s'}}></div>
+        <div className="absolute bottom-20 right-40 w-2 h-2 bg-accent/30 rounded-full animate-bounce" style={{animationDelay: '0.5s', animationDuration: '3.5s'}}></div>
       </div>
       
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">

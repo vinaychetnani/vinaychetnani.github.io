@@ -34,7 +34,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 warm-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="section-fade">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">Experience</h2>
