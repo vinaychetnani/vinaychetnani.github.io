@@ -1,0 +1,95 @@
+import { Download, Linkedin, Github, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export default function HeroSection() {
+  const scrollToProjects = () => {
+    const element = document.getElementById('projects');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const downloadResume = () => {
+    // Create a link to download the resume
+    const link = document.createElement('a');
+    link.href = '/api/download-resume';
+    link.download = 'Vinay_Chetnani_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  return (
+    <section id="home" className="min-h-screen gradient-bg flex items-center justify-center text-white relative overflow-hidden">
+      {/* Abstract background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <div className="mb-8">
+          <img 
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" 
+            alt="Vinay Chetnani professional headshot" 
+            className="w-48 h-48 rounded-full mx-auto shadow-2xl border-4 border-white/20"
+          />
+        </div>
+        
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">
+          Hi, I'm <span className="text-accent">Vinay</span>
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-light mb-6">
+          Senior Machine Learning Engineer
+        </h2>
+        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          7+ years building scalable ML solutions at <strong>Meta London</strong>. 
+          Specializing in NLP, Ads Ranking, and Generative AI.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button 
+            onClick={scrollToProjects}
+            className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold text-lg h-auto"
+          >
+            View My Work
+          </Button>
+          <Button 
+            onClick={downloadResume}
+            variant="outline"
+            className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg h-auto"
+          >
+            <Download className="mr-2 h-5 w-5" />
+            Download Resume
+          </Button>
+        </div>
+        
+        {/* Social Links */}
+        <div className="flex justify-center space-x-6 mt-12">
+          <a 
+            href="https://www.linkedin.com/in/vinay-chetnani/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-accent text-2xl transition-colors"
+          >
+            <Linkedin size={32} />
+          </a>
+          <a 
+            href="https://github.com/vinaychetnani" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-accent text-2xl transition-colors"
+          >
+            <Github size={32} />
+          </a>
+          <a 
+            href="mailto:vinaywiki@gmail.com"
+            className="text-white hover:text-accent text-2xl transition-colors"
+          >
+            <Mail size={32} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
