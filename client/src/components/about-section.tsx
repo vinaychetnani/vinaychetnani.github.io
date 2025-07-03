@@ -38,7 +38,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 warm-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="section-fade">
-          <h2 className="decorative-text text-4xl md:text-5xl font-bold text-center mb-16 text-primary">About Me 👨‍💻</h2>
+          <h2 className="decorative-text text-4xl md:text-5xl font-bold text-center mb-16 text-primary">About Me</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
@@ -92,21 +92,21 @@ export default function AboutSection() {
           
           {/* Technical Skills */}
           <div>
-            <h3 className="decorative-text text-2xl font-semibold text-center mb-8 text-primary">🛠️ Technical Expertise</h3>
+            <h3 className="decorative-text text-2xl font-semibold text-center mb-8 text-primary">Technical Expertise</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {skills.map((skill, index) => {
                 const colors = [
-                  'bg-primary/80', 
-                  'bg-secondary/80', 
-                  'bg-accent/80',
-                  'bg-gradient-to-r from-secondary/70 to-primary/70',
-                  'bg-gradient-to-r from-accent/70 to-secondary/70'
+                  'bg-primary/90', 
+                  'bg-secondary/90', 
+                  'bg-accent/90',
+                  'bg-gradient-to-r from-primary/80 to-secondary/80',
+                  'bg-gradient-to-r from-secondary/80 to-accent/80'
                 ];
                 const colorClass = colors[index % colors.length];
                 return (
                   <span 
                     key={skill}
-                    className={`skill-tag ${colorClass} text-white px-4 py-2 rounded-full text-sm font-medium cursor-default soft-shadow`}
+                    className={`skill-tag ${colorClass} text-white px-4 py-2 rounded-lg text-sm font-medium cursor-default transition-all duration-200 hover:scale-105`}
                   >
                     {skill}
                   </span>
