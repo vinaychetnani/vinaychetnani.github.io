@@ -30,26 +30,26 @@ export default function HeroSection() {
       
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <div className="mb-8 relative">
-          <div className="w-48 h-48 rounded-full mx-auto p-1 bg-gradient-to-r from-primary/20 to-accent/20 backdrop-blur-sm">
+          <div className="w-48 h-48 rounded-full mx-auto p-1 bg-gradient-to-r from-primary/30 to-accent/30 backdrop-blur-sm shadow-2xl border-2 border-white/20">
             <img 
               src={profileImage} 
               alt="Vinay Chetnani professional headshot" 
-              className="w-full h-full rounded-full object-cover shadow-xl"
+              className="w-full h-full rounded-full object-cover shadow-inner"
             />
           </div>
         </div>
         
-        <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Hi, I'm <span className="text-accent">Vinay</span>
+        <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6 leading-tight text-shadow-lg">
+          Hi, I'm <span className="text-accent drop-shadow-lg">Vinay</span>
         </h1>
-        <h2 className="decorative-text text-2xl md:text-3xl font-light mb-8 opacity-90">
+        <h2 className="decorative-text text-2xl md:text-3xl font-light mb-8 opacity-90 drop-shadow-md">
           Senior Machine Learning Engineer
         </h2>
         <div className="space-y-4 mb-10 max-w-3xl mx-auto">
-          <p className="text-xl md:text-2xl leading-relaxed font-light opacity-95">
+          <p className="text-xl md:text-2xl leading-relaxed font-light opacity-95 drop-shadow-md">
             <span className="font-semibold">7+ years</span> building scalable ML solutions at <strong>Meta London</strong>
           </p>
-          <p className="text-lg md:text-xl opacity-80 font-light">
+          <p className="text-lg md:text-xl opacity-80 font-light drop-shadow-sm">
             Specializing in NLP, Ads Ranking, and Generative AI
           </p>
         </div>
@@ -57,14 +57,14 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             onClick={scrollToProjects}
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-medium text-lg h-auto transition-all duration-300"
+            className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-medium text-lg h-auto transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             View My Work
           </Button>
           <Button 
             onClick={downloadResume}
             variant="outline"
-            className="border-2 border-white/70 text-white bg-white/10 hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-medium text-lg h-auto backdrop-blur-sm transition-all duration-300"
+            className="border-2 border-white/70 text-white bg-white/10 hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-medium text-lg h-auto backdrop-blur-sm transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             <Download className="mr-2 h-5 w-5" />
             Download Resume
