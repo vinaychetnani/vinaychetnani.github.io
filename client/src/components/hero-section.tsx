@@ -27,7 +27,6 @@ export default function HeroSection() {
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white rounded-full blur-3xl"></div>
       </div>
-      
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <div className="mb-8 relative">
           <div className="w-48 h-48 rounded-full mx-auto p-1 bg-gradient-to-r from-primary/30 to-accent/30 backdrop-blur-sm shadow-2xl border-2 border-white/20">
@@ -46,7 +45,7 @@ export default function HeroSection() {
           Senior Machine Learning Engineer
         </h2>
         <div className="space-y-4 mb-10 max-w-3xl mx-auto">
-          <div className="bg-black/15 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20">
+          <div className="backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20 bg-[transparent]">
             <p className="text-xl md:text-2xl leading-relaxed font-light text-white">
               <span className="font-semibold text-accent">7+ years</span> building scalable ML solutions at <strong className="text-white">Meta London</strong>
             </p>
