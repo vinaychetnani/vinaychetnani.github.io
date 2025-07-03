@@ -50,11 +50,7 @@ export default function HeroSection() {
               <span className="font-semibold text-accent">7+ years</span> building scalable ML solutions at <strong className="text-white">Meta London</strong>
             </p>
           </div>
-          <div className="bg-black/10 backdrop-blur-sm rounded-2xl px-6 py-3 border border-white/15">
-            <p className="text-lg md:text-xl font-light text-white/95">
-              Specializing in NLP, Ads Ranking, and Generative AI
-            </p>
-          </div>
+          
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
