@@ -96,17 +96,17 @@ export default function AboutSection() {
             <div className="flex flex-wrap justify-center gap-3">
               {skills.map((skill, index) => {
                 const colors = [
-                  'bg-primary/90', 
-                  'bg-secondary/90', 
-                  'bg-accent/90',
-                  'bg-gradient-to-r from-primary/80 to-secondary/80',
-                  'bg-gradient-to-r from-secondary/80 to-accent/80'
+                  'bg-primary', 
+                  'bg-secondary', 
+                  'bg-accent',
+                  'bg-slate-600',
+                  'bg-blue-600'
                 ];
                 const colorClass = colors[index % colors.length];
                 return (
                   <span 
                     key={skill}
-                    className={`skill-tag ${colorClass} text-white px-4 py-2 rounded-lg text-sm font-medium cursor-default transition-all duration-200 hover:scale-105`}
+                    className={`${colorClass} text-white px-4 py-2 rounded-lg text-sm font-medium cursor-default transition-all duration-200 hover:scale-105 shadow-md`}
                   >
                     {skill}
                   </span>
